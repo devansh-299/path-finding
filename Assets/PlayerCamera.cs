@@ -5,14 +5,12 @@ public class PlayerCamera : MonoBehaviour {
 
     public Transform target;
     public float smoothSpeed = 0.125f;
-    Vector3 offset;
+    public Vector3 offset;
     public FixedJoystick cameraStick;
 
     protected float cameraAngleSpeed = 2f;
     
-    void Start() {
-    	offset = new Vector3(0, 0, 0);
-    }
+    
 
 	void Update () {
 		float verticalMovement = cameraStick.input.y * cameraAngleSpeed;
